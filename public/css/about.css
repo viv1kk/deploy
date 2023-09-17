@@ -1,0 +1,99 @@
+@import url('./index.css');
+
+main{
+    /* border:3px solid greenyellow; */
+    color: white;
+    display: block;
+}
+h1
+{
+    margin:2rem;
+    text-align: center;
+}
+h1, h1 > *{
+    font-size: 3rem;
+    font-family:'Courier New', Courier, monospace;
+}
+h1 > span{
+    color: rgb(141, 198, 55);
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 1rem;
+}
+
+.container-flex img{
+    object-fit: cover;
+    width: 28rem;
+    height: 25rem;
+    box-shadow: 0 .5rem .7rem rgb(15, 18, 15);
+    border: 1.2rem solid beige;
+    padding: 1.2rem;
+}
+.container-flex section{
+    flex: 1 1 40rem;
+    align-self: stretch;
+}
+
+
+.container-flex h1{
+    color:bisque;
+}
+.container-flex section > p{
+    font-size: 1.3rem;
+    font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.649);
+    margin:1rem;
+    text-align: justify;
+    border-radius: 10px;
+    padding:2rem;
+} 
+p::before{
+    margin-left: 4rem;
+    content:"";
+}
+
+.image-container h3{
+    position:relative;
+    transform: translateY(-325%);
+    font-size: 3rem;
+    color: beige;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.714);
+    margin:auto;
+    width:100%;
+    padding: 1rem 1rem;
+    text-align: center;
+    /* mix-blend-mode: luminosity; */
+    font-size: 2rem;
+}
+
+.btn{
+    margin:1rem;
+    padding:.9rem;
+    background-color: rgba(12, 143, 12, 0.922);
+    font-size: 1.1rem;
+}
+.btn:hover{
+    background-color: rgba(12, 143, 12, 0.566);
+}
+
+
+@media screen and (max-width: 400px){
+    .container-flex img{
+        width:22rem;
+        height:20rem;
+    }
+    .image-container h3{
+        transform: translateY(-290%);
+    }
+
+    .container-flex h1{
+        font-size: 2rem;
+    }
+}

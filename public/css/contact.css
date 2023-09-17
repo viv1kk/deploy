@@ -1,0 +1,17 @@
+@import url('./index.css');
+
+.form{
+    width:425px;
+    height:max-content;
+}
+
+.field-area{
+    min-width: 100%;
+    min-height:8rem;
+}
+
+@media screen and (max-width: 400px){
+    .form{
+        width: 350px;
+    }
+}

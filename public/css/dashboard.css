@@ -1,0 +1,105 @@
+@import url('./index.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital@0;1&family=Varela+Round&display=swap');
+
+main{
+    display: flex;
+    color: white;
+    justify-content: center;
+    /* gap:2rem; */
+    flex-direction: column;
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 2rem;
+}
+
+.container-item{
+    background-color: rgba(0, 0, 0, 0.371);
+    border-radius: 20px;
+    align-self: stretch;
+    justify-self: stretch;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    min-width: 270px;
+    max-width: 325px;
+    transition: all .1s ease-in-out; 
+    flex:1;
+}
+
+.image-content{
+    padding:1rem;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+.image-content > img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    border-radius: 25px;
+}
+.container-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-content{
+    justify-content:flex-end;
+}
+
+
+.item-name{
+    font-size: 1.6rem;
+    font-family: monospace;
+    margin: 0 1rem 1rem 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-info{
+    padding-left: 1rem;
+    display: flex;
+    font-size: large;
+    font-weight: 500;
+    justify-content:space-between;
+}
+
+.btn, i
+{
+    background-color: rgba(0, 0, 0, 0);
+    margin:0px;
+    padding:0px;
+    width: auto;
+}
+.btn:hover{
+    color:greenyellow;
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(1.1)
+}
+
+.container-item:hover{
+    transform:scale(1.01)
+}
+
+.item-section{
+    margin:2rem 0;
+}
+
+.item-section > *{
+    padding: 1rem;
+}
+
+.item-section > h2{
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom:0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.item-section{
+    background-color: rgba(0, 0, 0, 0.171);
+    padding:2rem;
+    border-radius: 30px;
+}

@@ -1,0 +1,224 @@
+@import url('../css/index.css');
+
+main{
+    display: block;
+}
+.btn{
+    padding:10px;
+    border-radius: 0;
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    
+    align-items: flex-start;
+}
+
+
+.container > *{
+    padding:2rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.222);
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-content{
+    gap:2rem;
+    flex-grow: 1;
+}
+#cart-total{
+    width:300px;
+}
+
+
+#cart-total > div
+{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding:1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.total-subsection > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart-total > .grand-total{
+    display: flex;
+    flex-direction: row;
+}
+
+#cart-total > *{
+    margin:.4rem
+}
+
+
+
+
+
+
+
+#promo{
+    display: flex;
+    gap:.5rem;
+}
+#promo > *{
+    align-self: last baseline;
+}
+
+
+.label > input{
+    width: 20rem;
+}
+
+li{
+    list-style: none;
+}
+
+.basket-labels > ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.basket-labels{
+    padding:.7rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+.basket-labels > ul > li{
+    flex-grow:1
+}
+.basket-labels > ul > li::before,  .basket-labels > ul > li::after{
+    content:"";
+}
+
+.item-lab, .item{
+    width: 55%;
+    /* background-color: aqua; */
+}
+
+.item-desc{
+    display: flex;
+    gap:1rem;
+}
+.item-desc > .item-desc{
+    flex-direction: column;
+    /* background-color: rgb(170, 98, 4); */
+    overflow:hidden;
+}
+
+.item > img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius:10px;
+    border:2px solid white;
+}
+.price::before{
+    content:"₹"
+}
+.quantity::after{
+    content:" Kg"
+}
+
+.item-title{
+    font-size: 1.2rem;
+    padding:1rem;
+}
+
+#cart-items{
+    display: flex;
+    flex-direction: column;
+    gap:1rem
+}
+.basket-item{
+    display: flex;
+    padding:1rem;
+    border-bottom: 1px solid white;
+    gap:1rem
+}
+
+/* .basket-item > *, .basket-labels > ul > li{
+    border:2px solid blueviolet;
+
+} */
+
+.price-lab, .quantity-lab, .subtotal-lab, .quantity-control,.price-div, .subtotal-div{
+    width:15%;
+    /* text-align: center; */
+}
+.price-div, .subtotal-div{
+    display: flex;
+}
+
+.price-div{
+    justify-content: center;
+}
+
+.quantity-control
+{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-control > div{
+    padding:.5rem;
+}
+
+.quantity-control > div > span{
+    margin:.2rem;
+    padding: .2rem;
+}
+
+.quantity-control > div >*:hover{
+    color:chartreuse
+}
+
+.subtotal-div{
+    /* background-color: blueviolet; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.remove{
+    padding:.5rem 1rem;
+    background: 0;
+    color:white;
+    border:3px solid white;
+}
+.remove:hover{
+    background-color: white;
+    transition: all .3s ease-in-out;
+    
+    color:black;
+}
+
+.basket-item:hover{
+    transition: all .1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+}
+
+.subtotal{
+    padding:.5rem
+}
+
+.small{
+    font-size: smaller;
+    padding-left: 1.5rem;
+    color:gainsboro
+}
